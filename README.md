@@ -41,17 +41,12 @@ By following the tutorial step-by-step, I successfully implemented almost all th
 
 ## 3. Problems Faced & Solutions
 
-### 1. Tilemap Node Deprecation (Video Timestamp: 22:50)
-* **Problem:** In the tutorial, the creator uses the `TileMap` node to design the levels. However, in newer versions of Godot (like `v4.6`), the `TileMap` node is deprecated and marked with a red warning cross in the Create Node menu.
-* **Workaround:** For this project, you can continue using the deprecated `TileMap` node just like the creator. It will still work and won't affect the gameplay.
-* **Future Solution:** For future projects or upgrades, you should use the new `TileMapLayer` nodes instead. Godot provides a built-in extraction tool to convert a `TileMap` into individual `TileMapLayer` nodes.
+### 1) Tilemap (22:50)
+So the creator is using tilemap but the current version shows error in it. For now you can continue doing the same as the creator do as the error wont affect the work. But in later you have to change to `TileMapLayer`.
 
-![Tilemap Deprecation Warning](images/tilemap_deprecated.png)
+![Tilemap Deprecation](tilemap_deprecated.png)
 
-> [!IMPORTANT]
-> **Web Deployment Challenge (SharedArrayBuffer):**
-> When exporting a Godot 4.x game to run in a web browser via GitHub Pages, the game fails to load by default because GitHub Pages doesn't serve the required security headers for multithreading.
-> * **Solution:** We will integrate `coi-serviceworker.js` to intercept browser requests and supply the correct headers.
+This is for future problem currently there is no problem following the creator's way.
 
 ---
 
