@@ -20,7 +20,8 @@
 2. [Things That I Did](#2-things-that-i-did)
 3. [Problems Faced & Solutions](#3-problems-faced--solutions)
 4. [Differences from the Source Tutorial](#4-differences-from-the-source-tutorial)
-5. [How to Play & Controls](#5-how-to-play--controls)
+5. [Extra Things](#5-extra-things)
+6. [How to Play & Controls](#6-how-to-play--controls)
 
 ---
 
@@ -37,12 +38,14 @@
 ## 2. Things That I Did
 By following the tutorial step-by-step, I successfully implemented almost all the activities and mechanics shown in the video. The creator's detailed explanations and attention to small details made it very smooth to follow along and recreate the game structure, nodes, and scripts.
 
+I created nodes, scenes, game background and playing space, added coins, enemy, some note for reading, implemented codes, added more platforms, used sound and some minor activities.
+
 ---
 
 ## 3. Problems Faced & Solutions
 
-### 1) Tilemap (22:50)
-So the creator is using tilemap but the current version shows error in it. For now you can continue doing the same as the creator do as the error wont affect the work. But in later you have to change to `TileMapLayer`.
+### 3.1. Tilemap (22:50)
+So the creator is using tilemap but the current version shows error in it. For now you can continue doing the same as the creator is doing as the error won't affect the work. But in later time you have to change to `TileMapLayer`.
 
 ![Tilemap Deprecation](tilemap_deprecated.png)
 
@@ -55,11 +58,22 @@ Currently, this project matches the tutorial video's assets, logic, and level de
 
 ---
 
-## 5. How to Play & Controls
+## 5. Extra Things
+### 5.1. Screen not loading after re-open
+If your screen doesnot load properly after re-opening godot.
+![Image](screen_5.1.1.png)
+Then, In top left click on `Scene` then `Reload saved scene`.
+![Image](screen_5.1.2.png)
+After that you scene will load properly.
+![Image](screen_5.1.3.png)
+
+---
+
+## 6. How to Play & Controls
 You can move and jump using the following key bindings:
 
 | Action | Primary Keys | Alternative Keys |
 | :--- | :--- | :--- |
-| **Move Left** | `A` | Left Arrow |
-| **Move Right** | `D` | Right Arrow |
-| **Jump** | `W` / `Space` | Up Arrow |
+| **Move Left** | `A` / `Left-Arrow` | Left Arrow |
+| **Move Right** | `D` / `Right-Arrow` | Right Arrow |
+| **Jump** | `W` / `Space` / `Up-Arrow` | Up Arrow |
